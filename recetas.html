@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta etiquetas requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Recetas Subidas</title>
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0e9cd; /* Gris claro */
+        color: #333333; /* Negro suave */
+    }
+    header {
+        background-color: #17542A; 
+        color: #EDEEE9; 
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+    header h1 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    header p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    nav {
+        background-color: #17542A; 
+        padding: 0.5rem 0;
+    }
+    nav a {
+        color: #EDEEE9; 
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        padding: 2rem 0;
+    }
+    .recipe {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #EDEEE9;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+    }
+    .recipe img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    .recipe h3 {
+        color: #17542A; /* Verde oscuro */
+        font-weight: 600;
+    }
+    .recipe p {
+        font-size: 1rem;
+        color: #666666; /* Gris medio */
+        margin-bottom: 0.5rem;
+    }
+    footer {
+        background-color: #17542A; 
+        color: #EDEEE9;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recetas Subidas</h1>
+        <p>Descubre recetas compartidas por nuestra comunidad</p>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">Inicio</a>
+                <a class="navbar-brand" href="#">Recetas</a>
+                <a class="navbar-brand" href="subs.html">Suscribirse</a>
+                <a class="navbar-brand" href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Receta para Pasta Alfredo -->
+        <div class="recipe">
+            <img src="https://images.aws.nestle.recipes/resized/cc72869fabfc2bdfa036fd1fe0e2bad8_creamy_alfredo_pasta_long_left_1080_850.jpg" alt="Receta de Pasta">
+            <h3>Pasta Alfredo</h3>
+            <p><strong>Ingredientes:</strong> Pasta, crema, queso parmesano, ajo, mantequilla.</p>
+            <p><strong>Preparación:</strong> Cocina la pasta, prepara la salsa alfredo mezclando los ingredientes y combina todo.</p>
+            <button class="btn btn-success" data-toggle="modal" data-target="#modalPasta">Ver instrucciones</button>
+        </div>
+        <!-- Modal para Pasta Alfredo -->
+        <div class="modal fade" id="modalPasta" tabindex="-1" role="dialog" aria-labelledby="modalPastaLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPastaLabel">Instrucciones - Pasta Alfredo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Cocina la pasta en agua con sal hasta que esté al dente.</li>
+                            <li>En una sartén, derrite la mantequilla y sofríe el ajo.</li>
+                            <li>Añade la crema y el queso parmesano, mezcla hasta obtener una salsa homogénea.</li>
+                            <li>Combina la pasta con la salsa, sirve caliente y disfruta.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Receta ensalada de quinoa-->
+        <div class="recipe">
+            <img src="https://danzadefogones.com/wp-content/uploads/2024/08/ensalada-de-quinoa-facil.jpg" alt="Receta de Ensalada">
+            <h3>Ensalada de Quinoa</h3>
+            <p><strong>Ingredientes:</strong> Quinoa, tomate, pepino, cebolla morada, perejil, jugo de limón.</p>
+            <p><strong>Preparación:</strong> Cocina la quinoa, mezcla con los vegetales picados y adereza con limón.</p>
+            <button class="btn btn-success" data-toggle="modal" data-target="#modalEnsalada">Ver instrucciones</button>
+        </div>
+        <!-- Modal para Ensalada de Quinoa -->
+        <div class="modal fade" id="modalEnsalada" tabindex="-1" role="dialog" aria-labelledby="modalEnsaladaLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEnsaladaLabel">Instrucciones - Ensalada de Quinoa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Cocina la quinoa según las instrucciones del paquete.</li>
+                            <li>Corta el tomate, pepino y cebolla morada en cubos pequeños.</li>
+                            <li>Mezcla la quinoa cocida con los vegetales y perejil.</li>
+                            <li>Adereza con jugo de limón, sal y pimienta al gusto.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Receta de brownies -->
+        <div class="recipe">
+            <img src="https://www.nattahometaste.com/wp-content/uploads/2020/10/brownie-casero-super-chocolatoso-1.jpg" alt="Receta de Postre">
+            <h3>Brownies de Chocolate</h3>
+            <p><strong>Ingredientes:</strong> Harina, cacao en polvo, azúcar, mantequilla, huevos, chocolate negro.</p>
+            <p><strong>Preparación:</strong> Mezcla los ingredientes, hornea a 180°C durante 20 minutos y disfruta.</p>
+            <button class="btn btn-success" data-toggle="modal" data-target="#modalBrownies">Ver instrucciones</button>
+        </div>
+        <!-- Modal para Brownies-->
+        <div class="modal fade" id="modalBrownies" tabindex="-1" role="dialog" aria-labelledby="modalBrowniesLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBrowniesLabel">Instrucciones - Brownies de Chocolate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Precalienta el horno a 180°C.</li>
+                            <li>Mezcla la harina, cacao, azúcar y huevos en un recipiente.</li>
+                            <li>Derrite la mantequilla y el chocolate negro, luego incorpóralos a la mezcla.</li>
+                            <li>Vierte la mezcla en un molde y hornea por 20 minutos.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recetario Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4f86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
